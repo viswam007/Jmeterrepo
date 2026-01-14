@@ -37,8 +37,8 @@ pipeline {
             steps {
                 script {
                     sh '''
-                        /path/to/jmeter/bin/jmeter -n \
-                        -t tests/your-test-plan.jmx \
+                        C:/jmeter/bin/jmeter -n \
+                        -t C:/CICD/Jmeterrepo/Employees.jmx \
                         -l results/results.jtl \
                         -j logs/jmeter.log
                     '''
