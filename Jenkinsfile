@@ -36,11 +36,11 @@ pipeline {
         stage('Run JMeter Tests') {
             steps {
                 script {
-                    sh '''
-                        C:/jmeter/bin/jmeter -n \
-                        -t C:/CICD/Jmeterrepo/Employees.jmx \
-                        -l results/results.jtl \
-                        -j logs/jmeter.log
+                    bat '''
+                        C:\\jmeter\\bin\\jmeter -n \
+                        -t C:\\CICD\\Jmeterrepo\\Employees.jmx \
+                        -l C:\\results\\results.jtl \
+                        -j C:\\logs\\jmeter.log
                     '''
                 }
             }
